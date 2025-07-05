@@ -1,4 +1,3 @@
-// idk how we want to do this long term but this works for now.
 import React, { useState } from 'react';
 import { StyleSheet, Text, TextInput, View } from 'react-native';
 import { PlayerCount, useLifeStore } from '@/store/useLifeStore';
@@ -44,8 +43,6 @@ export default function PlayerPicker() {
     </View>
   );
 }
-
-/* ── Styles ────────────────────────────────────────────── */
 
 const styles = StyleSheet.create({
   container: { flexDirection: 'row', alignItems: 'center' },

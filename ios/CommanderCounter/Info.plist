@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>CommanderCounter</string>
+	<string>Rhystic Buddy</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -48,5 +48,14 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Comfortaa-Bold.ttf</string>
+		<string>Comfortaa-Light.ttf</string>
+		<string>Comfortaa-Medium.ttf</string>
+		<string>Comfortaa-Regular.ttf</string>
+		<string>Comfortaa-SemiBold.ttf</string>
+		<string>Comfortaa-VariableFont_wght.ttf</string>
+	</array>
 </dict>
 </plist>

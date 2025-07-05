@@ -1,4 +1,4 @@
-import { StyleSheet, Platform } from 'react-native';
+import { StyleSheet, Platform, TextStyle } from 'react-native';
 
 /**
  * Design tokens
@@ -33,25 +33,29 @@ export const radius = {
   pill: 999,
 };
 
-export const typography = {
+export const typography: { [key: string]: TextStyle } = {
   heading1: {
-    fontSize: 76,
-    fontWeight: '700' as const,
+    fontFamily: 'Comfortaa-Bold',
+    fontWeight: '900',
+    fontSize: 90,
     color: palette.textPrimary,
   },
   heading2: {
+    fontFamily: 'Comfortaa',
+    fontWeight: '600',
     fontSize: 24,
-    fontWeight: '600' as const,
     color: palette.textPrimary,
   },
   body: {
+    fontFamily: 'Comfortaa',
+    fontWeight: '400',
     fontSize: 16,
-    fontWeight: '400' as const,
     color: palette.textSecondary,
   },
   caption: {
+    fontFamily: 'Comfortaa',
+    fontWeight: '400',
     fontSize: 24,
-    fontWeight: '400' as const,
     color: palette.textSecondary,
   },
 };
@@ -109,8 +113,9 @@ export const globalStyles = StyleSheet.create({
 
   buttonText: {
     color: '#FFFFFF',
-    fontSize: 16,
+    fontFamily: 'Comfortaa',
     fontWeight: '600',
+    fontSize: 16,
   },
 
   input: {
@@ -122,25 +127,6 @@ export const globalStyles = StyleSheet.create({
     fontSize: 16,
     color: palette.textPrimary,
     ...shadows,
-  },
-});
-
-export const styles = StyleSheet.create({
-  main: {
-    display: 'flex',
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '100%',
-  },
-  text: {
-    color: 'black',
-  },
-  title: {
-    color: 'black',
-    fontSize: 24,
-    fontWeight: 'bold',
   },
 });
 

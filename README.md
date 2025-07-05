@@ -17,18 +17,22 @@ A React Native application for tracking Commander (EDH) game stats.
 ## Initial Setup
 
 1. Clone the repository:
+
    ```sh
    git clone git@github.com:BrodyHughes/commander-counter.git
    cd commander-counter
    ```
 
 2. Install dependencies (JavaScript, Ruby gems, and CocoaPods):
+
    ```sh
-   yarn install-all 
+   yarn install-all
    ```
-   *(This runs `yarn install`, `bundle install`, and `pod install`)*
+
+   _(This runs `yarn install`, `bundle install`, and `pod install`)_
 
    Alternatively, for a manual step-by-step setup:
+
    ```sh
    yarn install          # Install JavaScript dependencies
    bundle install        # Install Ruby dependencies (for iOS)
@@ -86,17 +90,17 @@ _Pro‑tip_: Press `R` twice to reload on Android, or `⌘ R` in the iOS Simulat
 
 ## Available Scripts
 
-| Command          | Description                                                     |
-| ---------------- | --------------------------------------------------------------- |
-| `yarn start`     | Starts the Metro bundler.                                       |
-| `yarn ios`       | Builds and runs the app on the iOS Simulator.                   |
-| `yarn android`   | Builds and runs the app on an Android emulator or device.       |
-| `yarn install-all`| Installs JS, Ruby, and CocoaPods dependencies. Useful for initial setup. |
-| `yarn lint`      | Lints the codebase using ESLint (configured with Prettier).     |
-| `yarn lint:fix`  | Lints and automatically fixes code style issues.                |
-| `yarn typecheck` | Checks the project for TypeScript errors (`tsc --noEmit`).        |
-| `yarn format`    | Formats code using Prettier (for all supported file types).     |
-| `yarn test`      | Runs unit tests using Jest (if configured).                     |
+| Command            | Description                                                              |
+| ------------------ | ------------------------------------------------------------------------ |
+| `yarn start`       | Starts the Metro bundler.                                                |
+| `yarn ios`         | Builds and runs the app on the iOS Simulator.                            |
+| `yarn android`     | Builds and runs the app on an Android emulator or device.                |
+| `yarn install-all` | Installs JS, Ruby, and CocoaPods dependencies. Useful for initial setup. |
+| `yarn lint`        | Lints the codebase using ESLint (configured with Prettier).              |
+| `yarn lint:fix`    | Lints and automatically fixes code style issues.                         |
+| `yarn typecheck`   | Checks the project for TypeScript errors (`tsc --noEmit`).               |
+| `yarn format`      | Formats code using Prettier (for all supported file types).              |
+| `yarn test`        | Runs unit tests using Jest (if configured).                              |
 
 ## Contributing
 
@@ -112,6 +116,7 @@ Follow these steps to get a pull request merged:
 
 **Local Sanity Check:**
 Before pushing, run the following to ensure your changes meet project standards:
+
 ```bash
 yarn lint:fix && yarn typecheck # Add && yarn test when tests are in place
 ```

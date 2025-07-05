@@ -1,4 +1,5 @@
 import { create } from 'zustand';
+import { SWAMP, ISLAND, MOUNTAIN, PLAINS, FOREST } from '@/consts/consts';
 
 /* ── Types ───────────────────────────────────────── */
 export interface PlayerState {
@@ -6,6 +7,7 @@ export interface PlayerState {
   life: number;
   delta: number;
   timer?: NodeJS.Timeout;
+  backgroundColor: string;
 }
 
 export type PlayerCount = 2 | 3 | 4 | 5 | 6;
@@ -18,17 +20,28 @@ interface LifeStore {
   setTotalPlayers: (total: PlayerCount) => void;
 }
 
-/* helper */
-const makePlayer = (id: number): PlayerState => ({
-  id,
-  life: 40,
-  delta: 0,
-});
+/* ── Helpers ───────────────────────────────────────── */
+
+const createPlayers = (total: PlayerCount): PlayerState[] => {
+  const panelColors = [SWAMP, ISLAND, MOUNTAIN, PLAINS, FOREST];
+  // Fisher-Yates shuffle
+  for (let i = panelColors.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [panelColors[i], panelColors[j]] = [panelColors[j], panelColors[i]];
+  }
+
+  return Array.from({ length: total }, (_, i) => ({
+    id: i,
+    life: 40,
+    delta: 0,
+    backgroundColor: panelColors[i % panelColors.length], // Use modulo to loop if more players than colors
+  }));
+};
 
 /* ── Store ───────────────────────────────────────── */
 export const useLifeStore = create<LifeStore>((set) => ({
   totalPlayers: 4,
-  players: Array.from({ length: 4 }, (_, i) => makePlayer(i)),
+  players: createPlayers(4),
 
   changeLife: (index, amount) =>
     set((state) => {
@@ -45,7 +58,7 @@ export const useLifeStore = create<LifeStore>((set) => ({
           upd[index] = { ...upd[index], delta: 0, timer: undefined };
           return { players: upd };
         });
-      }, 1000);
+      }, 3000);
 
       next[index] = p;
       return { players: next };
@@ -54,11 +67,6 @@ export const useLifeStore = create<LifeStore>((set) => ({
   setTotalPlayers: (total) =>
     set((state) => {
       if (total < 2 || total > 6) return state;
-
-      let players = [...state.players];
-      if (total < players.length) players = players.slice(0, total);
-      else while (players.length < total) players.push(makePlayer(players.length));
-
-      return { totalPlayers: total, players };
+      return { totalPlayers: total, players: createPlayers(total) };
     }),
 }));

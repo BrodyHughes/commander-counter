@@ -11,6 +11,7 @@
     "start": "react-native start",
     "test": "jest",
     "install-all": "yarn install && bundle install && cd ios && pod install && cd ..",
+    "clean": "rm -rf node_modules yarn.lock && cd android && ./gradlew clean && cd .. && cd ios && rm -rf Pods Podfile.lock build",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
@@ -20,11 +21,14 @@
   "dependencies": {
     "@react-native-community/blur": "^4.4.1",
     "immer": "^10.1.1",
+    "lucide-react-native": "^0.525.0",
     "react": "19.0.0",
     "react-native": "0.79.2",
     "react-native-gesture-handler": "^2.25.0",
+    "react-native-linear-gradient": "^2.8.3",
     "react-native-reanimated": "^3.17.5",
     "react-native-safe-area-context": "^5.4.0",
+    "react-native-svg": "^15.12.0",
     "zustand": "^5.0.4"
   },
   "devDependencies": {

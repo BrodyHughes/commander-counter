@@ -9,9 +9,15 @@
 /* Begin PBXBuildFile section */
 		0C80B921A6F3F58F76C31292 /* libPods-CommanderCounter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-CommanderCounter.a */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		17B170320B9244B8891046E2 /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F9D56E5340440F9B067154D /* Comfortaa-Bold.ttf */; };
+		3F8BDDBA018B4212A40A0666 /* Comfortaa-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A9C5367EBC14B7E9A4099A4 /* Comfortaa-SemiBold.ttf */; };
+		4B30BD16FA8C45AA87760E9B /* Comfortaa-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5E731016E436429E906037FC /* Comfortaa-Medium.ttf */; };
+		5F77B0F78CE047F79F8FBEB2 /* Comfortaa-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 899BBE93EF074CA580B3FF68 /* Comfortaa-VariableFont_wght.ttf */; };
 		70652633B60C1B10494F99F7 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
+		74702023614641028B69483D /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 383E33205BE14A7C9D8EFC6E /* Comfortaa-Light.ttf */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		EC67AB1C167945B9BE1560EA /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 20AE06C04CC5446AA9D0A84D /* Comfortaa-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,11 +25,17 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = CommanderCounter/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = CommanderCounter/Info.plist; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = CommanderCounter/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		20AE06C04CC5446AA9D0A84D /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Comfortaa-Regular.ttf"; path = "../assets/fonts/Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
+		2A9C5367EBC14B7E9A4099A4 /* Comfortaa-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Comfortaa-SemiBold.ttf"; path = "../assets/fonts/Comfortaa-SemiBold.ttf"; sourceTree = "<group>"; };
+		2F9D56E5340440F9B067154D /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Comfortaa-Bold.ttf"; path = "../assets/fonts/Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
+		383E33205BE14A7C9D8EFC6E /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Comfortaa-Light.ttf"; path = "../assets/fonts/Comfortaa-Light.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-CommanderCounter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommanderCounter.debug.xcconfig"; path = "Target Support Files/Pods-CommanderCounter/Pods-CommanderCounter.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-CommanderCounter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommanderCounter.release.xcconfig"; path = "Target Support Files/Pods-CommanderCounter/Pods-CommanderCounter.release.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-CommanderCounter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CommanderCounter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E731016E436429E906037FC /* Comfortaa-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Comfortaa-Medium.ttf"; path = "../assets/fonts/Comfortaa-Medium.ttf"; sourceTree = "<group>"; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = CommanderCounter/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = CommanderCounter/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		899BBE93EF074CA580B3FF68 /* Comfortaa-VariableFont_wght.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Comfortaa-VariableFont_wght.ttf"; path = "../assets/fonts/Comfortaa-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -75,6 +87,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				86FDD4AAE2F540C09A116004 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -87,6 +100,20 @@
 				13B07F961A680F5B00A75B9A /* CommanderCounter.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		86FDD4AAE2F540C09A116004 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2F9D56E5340440F9B067154D /* Comfortaa-Bold.ttf */,
+				383E33205BE14A7C9D8EFC6E /* Comfortaa-Light.ttf */,
+				5E731016E436429E906037FC /* Comfortaa-Medium.ttf */,
+				20AE06C04CC5446AA9D0A84D /* Comfortaa-Regular.ttf */,
+				2A9C5367EBC14B7E9A4099A4 /* Comfortaa-SemiBold.ttf */,
+				899BBE93EF074CA580B3FF68 /* Comfortaa-VariableFont_wght.ttf */,
+			);
+			name = Resources;
+			path = "";
 			sourceTree = "<group>";
 		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
@@ -161,6 +188,12 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				70652633B60C1B10494F99F7 /* PrivacyInfo.xcprivacy in Resources */,
+				17B170320B9244B8891046E2 /* Comfortaa-Bold.ttf in Resources */,
+				74702023614641028B69483D /* Comfortaa-Light.ttf in Resources */,
+				4B30BD16FA8C45AA87760E9B /* Comfortaa-Medium.ttf in Resources */,
+				EC67AB1C167945B9BE1560EA /* Comfortaa-Regular.ttf in Resources */,
+				3F8BDDBA018B4212A40A0666 /* Comfortaa-SemiBold.ttf in Resources */,
+				5F77B0F78CE047F79F8FBEB2 /* Comfortaa-VariableFont_wght.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +415,7 @@
 					"$(inherited)",
 					" ",
 				);
+				PRODUCT_NAME = "Rhystic Buddy";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
@@ -454,6 +488,7 @@
 					"$(inherited)",
 					" ",
 				);
+				PRODUCT_NAME = "Rhystic Buddy";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
